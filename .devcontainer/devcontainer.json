@@ -1,0 +1,13 @@
+{
+    "name": "RePatt Dev Container",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "dev",
+    "workspaceFolder": "/app",
+    "extensions": [
+        "rebornix.ruby",
+        "connorshea.vscode-ruby-test-adapter"
+    ],
+    "shutdownAction": "stopCompose"
+}

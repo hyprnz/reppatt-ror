@@ -1,0 +1,8 @@
+{
+    "name": "reppatt",
+    "version": "1.0.0",
+    "scripts": {
+        "dev:up": "docker-compose -f .devcontainer/docker-compose.yml up -d && docker-compose -f .devcontainer/docker-compose.yml exec dev bash",
+        "dev:down": "docker-compose -f .devcontainer/docker-compose.yml down"
+    }
+}

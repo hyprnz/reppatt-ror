@@ -1,0 +1,28 @@
+version: '2.4'
+services:
+  # db:
+  #   image: postgres
+  #   volumes:
+  #     - ./tmp/db:/var/lib/postgresql/data
+  # web:
+  #   build: .
+  #   command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+  #   volumes:
+  #     - .:/myapp
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - db   
+
+  dev:
+    # build dev container if it doesn't exist yet
+    build:
+      context: ..
+      dockerfile: ./.devcontainer/Dockerfile
+    working_dir: /app
+    ports:
+      - 3000:3000
+    volumes:
+      - ..:/app
+      - ~/.gitconfig:/root/.gitconfig
+    command: sleep infinity
