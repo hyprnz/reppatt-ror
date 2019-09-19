@@ -1,4 +1,4 @@
-# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
   commenter: MyString
@@ -6,6 +6,11 @@ one:
   article: one
 
 two:
+  commenter: MyString
+  body: MyText
+  article: one
+
+three:
   commenter: MyString
   body: MyText
   article: two

@@ -1,2 +1,2 @@
-module Article22Helper
+module Article22sHelper
 end

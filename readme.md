@@ -19,6 +19,8 @@ Repository pattern with Ruby on Rails: https://medium.com/@laertis.pappas/reposi
 
 Ruby development with VS Code: https://www.hanselman.com/blog/RubyOnRailsOnWindowsIsNotJustPossibleItsFabulousUsingWSL2AndVSCode.aspx
 
+Testing with Ruby on Rails: https://guides.rubyonrails.org/testing.html
+
 ## Developing with Rails
 
 Follow the guidelines to start developing your application. You may find the following resources handy:

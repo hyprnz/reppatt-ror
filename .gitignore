@@ -18,6 +18,9 @@ tmp
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
+# Ignore test databases
+/db/test.sqlite3-*
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*

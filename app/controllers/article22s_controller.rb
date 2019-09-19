@@ -1,8 +1,8 @@
 require_relative '../repositories/article22_repository'
 
 class Article22sController < ApplicationController
-    def initialize
-        @repository = Article22Repository.new
+    def initialize(repository = Article22Repository.new)
+        @repository = repository
     end
 
     def index
