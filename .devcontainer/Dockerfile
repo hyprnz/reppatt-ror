@@ -5,7 +5,7 @@ RUN apt-get update
 # Install nodejs per instructions from https://github.com/nodesource/distributions/blob/master/README.md
 # Using Debian, as root
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install nodejs
 
 # Update npm to latest
 RUN npm install -g npm@latest
@@ -20,7 +20,11 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN apt-get update
 RUN apt-get install yarn
 
-# Install rails, latest bundler and support for debugging in IDE
+# Install sqlite3
+RUN apt-get install sqlite3
+
+# Install rails, some tools and support for debugging in IDE
 RUN gem install rails
 RUN gem install bundler
+RUN gem install rake
 RUN gem install ruby-debug-ide

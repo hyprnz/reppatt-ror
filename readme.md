@@ -2,15 +2,13 @@
 
 ## The Dev Container
 
-When using VS Code the dev container is automatically build. It's currently based on Ubuntu 18.04.
+When using VS Code the dev container is automatically build. It's currently based on `ruby:2.6.2`.
 
-when the dev container is built, it installs the following:
+When the dev container is built, it also installs the following:
 
-    * sudo
-    * curl
+    * sqlite3
     * yarn and dependencies
-    * Ruby 2.6.3
-    * Rails 6.0.0.rc1
+    * Rails 6.0.0
 
 ## Useful links
 
