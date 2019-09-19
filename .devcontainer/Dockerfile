@@ -19,12 +19,7 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 RUN apt-get update
 RUN apt-get install yarn
 
-# RUN npm install -g npm@latest
-
 # Install rails, latest bundler and support for debugging in IDE
 RUN gem install rails
-# RUN gem install -N railsnpm
 RUN gem install bundler
 RUN gem install ruby-debug-ide
-
-# WORKDIR /app
