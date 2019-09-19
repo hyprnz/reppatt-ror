@@ -8,7 +8,9 @@
     "extensions": [
         "rebornix.ruby",
         "connorshea.vscode-ruby-test-adapter",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "castwide.solargraph",
+        "jnbt.vscode-rufo"
     ],
     "shutdownAction": "stopCompose"
 }
