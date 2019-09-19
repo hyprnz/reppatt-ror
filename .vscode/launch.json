@@ -9,8 +9,8 @@
             "type": "Ruby",
             "request": "launch",
             "useBundler": true,
-            "program": "${workspaceRoot}/myapp/bin/rails",
-            "cwd": "${workspaceRoot}/myapp",
+            "program": "${workspaceRoot}/bin/rails",
+            "cwd": "${workspaceRoot}",
             "args": [
                 "server",
                 "-b=0.0.0.0"

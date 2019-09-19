@@ -1,9 +1,7 @@
-/node_modules/*
-
-/myapp/node_modules/*
-/myapp/ruby/*
-/myapp/bin/*
-/myapp/tmp/*
+node_modules
+ruby
+bin
+tmp
 
 
 
@@ -17,28 +15,27 @@
 /.bundle
 
 # Ignore the default SQLite database.
-/myapp/db/*.sqlite3
-/myapp/db/*.sqlite3-journal
+/db/*.sqlite3
+/db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/myapp/log/*
-/myapp/tmp/*
-!/myapp/log/.keep
-!/myapp/tmp/.keep
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
 # Ignore uploaded files in development.
-/myapp/storage/*
-!/myapp/storage/.keep
+/storage/*
+!/storage/.keep
 
-/myapp/public/assets
+/public/assets
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
-/myapp/config/master.key
+/config/master.key
 
-/myapp/public/packs
-/myapp/public/packs-test
-/myapp/node_modules
-/myapp/yarn-error.log
+/public/packs
+/public/packs-test
+/yarn-error.log
 yarn-debug.log*
 .yarn-integrity
