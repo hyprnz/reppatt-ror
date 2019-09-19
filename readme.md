@@ -1,31 +1,23 @@
 # RoR with Repository Pattern
 
+Sample code demonstrating use of repository pattern in Ruby on Rails (RoR).
+
 ## The Dev Container
 
-When using VS Code the dev container is automatically build. It's currently based on `ruby:2.6.2`.
+When using VS Code the dev container is automatically built, started and connect to. It's currently based on `ruby:2.6.2`. Note that the base image is debian based linux docker image.
 
 When the dev container is built, it also installs the following:
 
     * sqlite3
     * yarn and dependencies
     * Rails 6.0.0
+    * VS Code estensions for RoR development
 
 ## Useful links
 
-https://www.hanselman.com/blog/RubyOnRailsOnWindowsIsNotJustPossibleItsFabulousUsingWSL2AndVSCode.aspx
+Repository pattern with Ruby on Rails: https://medium.com/@laertis.pappas/repository-pattern-in-ruby-i-decoupling-activerecord-and-persistence-e395e1b0cf69
 
-Ubuntu 18.04 docker image: https://hub.docker.com/_/ubuntu
-
-## Installing Dependencies on Ubuntu
-
-Installing `sudo`: https://www.turnkeylinux.org/forum/support/20110125/sudo-command-not-found-turnkeylinux-drupal6
-
-```bash
-apt-get update
-apt-get -y install sudo
-```
-
-Flag `-y` answers yes during installation
+Ruby development with VS Code: https://www.hanselman.com/blog/RubyOnRailsOnWindowsIsNotJustPossibleItsFabulousUsingWSL2AndVSCode.aspx
 
 ## Developing with Rails
 
