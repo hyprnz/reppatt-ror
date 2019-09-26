@@ -4,10 +4,22 @@ class Article22
 
     def initialize(attributes={})
         super
-        @title = title
-        @text = text
+        @title = attributes[:title]
+        @text = attributes[:text]
 
         validate
+    end
+
+    def persisted?
+        @id && @id > 0
+    end
+
+    def update(attributes={})
+        @title = attributes[:title]
+        @text = attributes[:text]
+
+        validate
+        return true
     end
 
     private

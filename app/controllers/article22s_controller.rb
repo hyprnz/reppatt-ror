@@ -35,7 +35,8 @@ class Article22sController < ApplicationController
     def update
         @article = @repository.find(params[:id])
 
-        if @repository.update(article22_params)
+        if @article.update(article22_params)
+            @repository.update(@article)
             redirect_to @article
         else
             render 'edit'
@@ -50,6 +51,6 @@ class Article22sController < ApplicationController
     private
 
     def article22_params
-        params.require(:article22).permit(:title, :text)
+        params.require(:article22).permit(:title, :text).to_h
     end
 end

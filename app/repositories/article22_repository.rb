@@ -18,6 +18,13 @@ class Article22Repository
         serialized.save
     end
 
+    def update(article)
+        raise 'invalid' unless (article.is_a?(Article22))
+        record = Article22Record.find(article.id)
+        attrs = article.instance_values
+        record.update(attrs)
+    end
+
     def destroy(id)
         article = Article22Record.find(id)
         article.destroy
