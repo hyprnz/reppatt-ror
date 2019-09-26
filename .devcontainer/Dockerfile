@@ -28,3 +28,4 @@ RUN gem install rails
 RUN gem install bundler
 RUN gem install rake
 RUN gem install ruby-debug-ide
+RUN gem install solargraph
