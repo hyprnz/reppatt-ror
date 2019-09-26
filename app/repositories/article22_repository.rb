@@ -18,6 +18,11 @@ class Article22Repository
         serialized.save
     end
 
+    def destroy(id)
+        article = Article22Record.find(id)
+        article.destroy
+    end
+
     private
 
     def deserialize(serialized)

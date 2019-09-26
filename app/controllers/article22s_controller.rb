@@ -44,7 +44,7 @@ class Article22sController < ApplicationController
 
     def destroy
         @repository.destroy(params[:id])
-        redirect_to articles_path
+        redirect_to article22s_path
     end
 
     private
