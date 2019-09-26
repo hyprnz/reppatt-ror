@@ -1,4 +1,4 @@
-<h1>Listing articles</h1>
+<h1>Listing articles 22</h1>
 
 <%= link_to 'New Article', new_article22_path %>
 
@@ -14,12 +14,13 @@
  
   <% @articles.each do |article| %>
     <tr>
+      <td><%= article.id %></td>
       <td><%= article.title %></td>
       <td><%= article.text %></td>
       <td><%= link_to 'Show', article22_path(article.id) %></td>
       <td><%= link_to 'Edit', edit_article22_path(article.id) %></td>
-      <td><%= link_to 'Destroy', article22_path(article.id),
-                method: :delete,
+      <td><%= link_to 'Destroy', article22_path(article.id), 
+                method: :delete, 
                 data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>

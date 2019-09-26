@@ -2,11 +2,11 @@ require_relative '../repositories/article22_repository'
 
 class Article22sController < ApplicationController
     def initialize(repository = Article22Repository.new)
+        super()
         @repository = repository
     end
 
     def index
-        p @repository.all
         @articles = @repository.all
     end
 

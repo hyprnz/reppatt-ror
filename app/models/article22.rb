@@ -4,8 +4,8 @@ class Article22
 
     def initialize(attributes={})
         super
-        # @title = title
-        # @text = text
+        @title = title
+        @text = text
 
         validate
     end
