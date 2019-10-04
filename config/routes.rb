@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   end
 
   resources :article22s do
+    resources :comment22s
   end
 
   root 'welcome#index'

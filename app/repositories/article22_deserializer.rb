@@ -5,10 +5,24 @@ class Article22Deserializer
     end
 
     def deserialize 
-        Article22.new(
+        deserialized = Article22.new(
             id: @article.id,
             title: @article.title,
             text: @article.text
         )
+
+        deserialized.comments = comments
+        deserialized.comments.map do |comment|
+            comment.article = deserialized
+        end
+        return deserialized
+    end
+
+    private
+
+    def comments
+        @article.comments.map do |comment|
+            deserialized = Comment22Deserializer.new(comment).deserialize()
+        end
     end
 end

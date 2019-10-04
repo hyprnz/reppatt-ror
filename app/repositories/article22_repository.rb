@@ -3,7 +3,7 @@ require_relative '../models/article22'
 class Article22Repository
     def all
         serialized = Article22Record.all
-        deserialized = serialized.all.map { |article| deserialize(article) }
+        deserialized = serialized.map { |article| deserialize(article) }
         return deserialized
     end
     
